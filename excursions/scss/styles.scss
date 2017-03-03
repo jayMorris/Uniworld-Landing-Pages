@@ -1,0 +1,413 @@
+//Media Queries
+// MOBILE FIRST
+// Custom, iPhone 20EM
+@mixin bp-20EM {
+    @media only screen and (min-width: 20em) {
+        @content;
+    }
+}
+
+// Extra Small Devices, 30EM
+@mixin bp-30EM {
+    @media only screen and (min-width: 30em) {
+        @content;
+    }
+}
+
+// Small Devices, 48EM
+@mixin bp-48EM {
+    @media only screen and (min-width: 48em) {
+        @content;
+    }
+}
+
+// Medium Devices, 62EM
+@mixin bp-62EM {
+    @media only screen and (min-width: 62em) {
+        @content;
+    }
+}
+
+// Large Devices, 75EM Screens
+@mixin bp-75EM {
+    @media only screen and (max-width: 75em) {
+        @content;
+    }
+}
+
+// NON MOBILE FIRST
+// Custom, iPhone 20EM
+@mixin dbp-20EM {
+    @media only screen and (max-width: 20em) {
+        @content;
+    }
+}
+
+// Extra Small Devices, 30EM
+@mixin dbp-30EM {
+    @media only screen and (max-width: 30em) {
+        @content;
+    }
+}
+
+// Small Devices, 48EM
+@mixin dbp-48EM {
+    @media only screen and (max-width: 48em) {
+        @content;
+    }
+}
+
+// Medium Devices, 62EM
+@mixin dbp-62EM {
+    @media only screen and (max-width: 62em) {
+        @content;
+    }
+}
+
+// Large Devices, 75EM Screens
+@mixin dbp-75EM {
+    @media only screen and (max-width: 75em) {
+        @content;
+    }
+}
+
+// COLORS
+$uniBlue: #2e3c49;
+// FONTS
+$boldSans: 'libel_suitbold';
+$sans: 'libel_suitregular';
+$boldItalicSerif: 'questa_grandebold_italic';
+$sansTwo: 'questa_sansregular';
+$boldSansTwo: 'questa_sansbold';
+
+
+/*! --------------------------------------------------------
+                ITINS
+----------------------------------------------------------*/
+
+
+.feat-itins {}
+    margin-top: 25px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itinerary-row-2018 {
+    margin-bottom: 50px;
+}
+
+.feat-itins h2 {
+    display: block;
+    text-align: left;
+    border-bottom: solid 1px;
+    padding-bottom: 0.2em;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .itinerary-row-2018__copy {
+        margin-top: 25px;
+    }
+}
+
+.itinerary-row-2018__copy h3 {
+    display: flex;
+    margin-top: 0.1em;
+    font-size: 1.3em;
+    align-items: center;
+    margin-bottom: 0.9em;
+    letter-spacing: 0.07em;
+}
+
+.circ-divider {
+    width: 5px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    margin: 0.2em 0.5em 0;
+}
+
+.itin-to {
+    font-family: "questa_grandebold_italic", serif;
+    text-transform: none;
+    margin: 0.2em 0.5em 0;
+    font-size: 0.8em;
+    letter-spacing: initial;
+}
+
+.itinerary-row-2018__button .btn {
+    max-width: 200px;
+    width: 46%;
+}
+
+.content ul li{
+    padding: 3px 0;
+    border-bottom: dotted 1px #eee;
+}
+
+.content-img {
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .itinerary-row-2018__button .btn {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.gen-list {
+    h3:last-child {
+        margin: 56px 0;
+    }
+    .gen-list_list {
+        column-count: 1;
+        list-style-type: disc;
+        li {
+            margin: 4px 0 4px 1em;
+        }
+        @include bp-48EM {
+            column-count: 2;
+        }
+    }
+}
+
+
+/*! --------------------------------------------------------
+                GENERAL CLASSES
+----------------------------------------------------------*/
+
+#uni {
+    &Disclaimer {
+        font-size: 85%;
+        padding: 0 15px;
+    }
+}
+
+.uni {
+    &-module-header {
+        font-size: 18px;
+        @include dbp-75EM {
+            font-size: 16px;
+        }
+        @include dbp-48EM {
+            font-size: 14px;
+        }
+        &-lines:before {
+            display: none;
+        }
+        &-lines:after {
+            display: none;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+            color: $uniBlue
+        }
+        span {
+            font-size: 0.6em;
+            margin-top: 0;
+            line-height: 1em;
+            color: $uniBlue;
+            font-family: $boldItalicSerif;
+            text-transform: initial;
+            display: block;
+            letter-spacing: initial;
+        }
+    }
+    &DisclaimerRightCA {
+        width: 81px;
+        float: left;
+    }
+    &DisclaimerLeftCA {
+        width: calc(100% - 81px);
+        float: left;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+/*! --------------------------------------------------------
+                CUSTOM CLASSES
+----------------------------------------------------------*/
+
+// centered columns styles
+.row-centered-center {
+    text-align: center;
+    div[class*='col-'] {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        margin-right: -4px; // inline-block space fix
+    }
+}
+
+.row-centered {
+    text-align: center;
+    div[class*='col-'] {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        text-align: left; //reset the text-align
+        margin-right: -4px; // inline-block space fix
+    }
+}
+
+// NO GUTTER
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// MAKE COLUMNS EQUAL HEIGHTS IN EACH ROW
+.row-flex,
+.row-flex > div[class*='col-'] {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.row-flex-wrap {
+    align-content: flex-start;
+    flex: 0;
+}
+
+.row-flex > div[class*='col-'],
+.container-flex > div[class*='col-'] {
+    margin: -.2px;
+    /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div,
+.row-flex > div[class*='col-'] div {
+    width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: column nowrap;
+}
+
+.flex-grow {
+    display: flex;
+    flex: 2;
+}
+
+
+/* TEXT RESPONSIVE ALIGN */
+
+.text-left-not-xs,
+.text-left-not-sm,
+.text-left-not-md,
+.text-left-not-lg {
+    text-align: left;
+}
+
+.text-center-not-xs,
+.text-center-not-sm,
+.text-center-not-md,
+.text-center-not-lg {
+    text-align: center;
+}
+
+.text-right-not-xs,
+.text-right-not-sm,
+.text-right-not-md,
+.text-right-not-lg {
+    text-align: right;
+}
+
+.text-justify-not-xs,
+.text-justify-not-sm,
+.text-justify-not-md,
+.text-justify-not-lg {
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .text-left-not-xs,
+    .text-center-not-xs,
+    .text-right-not-xs,
+    .text-justify-not-xs {
+        text-align: inherit;
+    }
+    .text-left-xs {
+        text-align: left;
+    }
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-xs {
+        text-align: right;
+    }
+    .text-justify-xs {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-left-not-sm,
+    .text-center-not-sm,
+    .text-right-not-sm,
+    .text-justify-not-sm {
+        text-align: inherit;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    .text-justify-sm {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .text-left-not-md,
+    .text-center-not-md,
+    .text-right-not-md,
+    .text-justify-not-md {
+        text-align: inherit;
+    }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-center-md {
+        text-align: center;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    .text-justify-md {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-left-not-lg,
+    .text-center-not-lg,
+    .text-right-not-lg,
+    .text-justify-not-lg {
+        text-align: inherit;
+    }
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-center-lg {
+        text-align: center;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+    .text-justify-lg {
+        text-align: justify;
+    }
+}

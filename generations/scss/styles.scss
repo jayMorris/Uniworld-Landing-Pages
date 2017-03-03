@@ -1,9 +1,8 @@
 //Media Queries
-
 // MOBILE FIRST
 // Custom, iPhone 20EM
 @mixin bp-20EM {
-    @media only screen and (min-width : 20em) {
+    @media only screen and (min-width: 20em) {
         @content;
     }
 }
@@ -36,14 +35,384 @@
     }
 }
 
+.btn-small,
+.feat-itin .uniHalf h3,
+.feat-itin .uniHalf p strong,
+.featureBkgnd h3,
+.itinImageWrap .uni-new,
+h2.uniSubhead {
+    text-transform: uppercase;
+    margin-top: 56px;
+}
+
+.centeredSubhead,
+.col-lg-12.brochureCTA,
+.row-centered,
+.row.features .col-md-6,
+.uniIntro .award {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    margin-right: -4px;
+    vertical-align: top
+}
+
+strong {
+    letter-spacing: .045em
+}
+
+.centeredSubhead {
+    font-family: civita;
+    font-size: 22px;
+    color: #658bab;
+    margin-bottom: 20px;
+    line-height: 1.5
+}
+
+.uniIntro p {
+    font-size: 22px;
+    line-height: 1.75em;
+    text-align: left;
+}
+
+@media only screen and (max-width:768px) {
+    .uniIntro p {
+        font-size: 18px;
+        line-height: 1.5em
+    }
+}
+
+.brochureCTA .centeredSubhead {
+    margin-bottom: 0
+}
+
+.row.features .col-md-6 {
+    margin-bottom: 15px
+}
+
+.col-centered.col-md-8,
+.col-centered.col-md-9 {
+    font-size: 18px;
+    text-align: center
+}
+
+.col-lg-12.brochureCTA {
+    margin-bottom: 50px;
+    margin-top: 25px
+}
+
+.text-center p {
+    text-align: center;
+}
+
+.col-centered p,
+.iconLegend p {}
+
+@media(min-width:1101px) {
+    .uniHalf {
+        min-height: 700px
+    }
+}
+
+.featureBkgnd p {
+    margin-bottom: 0
+}
+
+.iconLegend .col-xs-2 {
+    padding-right: 0
+}
+
+.iconLegend p.col-xs-10 {
+    font-size: 15px
+}
+
+.iconLegend {
+    margin-top: 15px;
+    margin-bottom: 25px
+}
+
+.featureBkgnd {
+    background-color: #ecebea;
+    padding: 41px;
+    height: 215px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.featureBkgnd h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .07em;
+    color: #356b99
+}
+
+.btn-small,
+.itinImageWrap .uni-new span {
+    font-weight: 600
+}
+
+.featureBkgnd p {
+    font-size: 15px;
+    text-align: center
+}
+
+h2.uniSubhead {
+    font-size: 31px;
+    letter-spacing: .05em;
+    margin-bottom: 29px;
+    color: #356b99
+}
+
+.btn-small,
+h2.uniSubhead {
+    font-family: ProximaNova-Regular, sans-serif;
+    text-align: center
+}
+
+.btn-small {
+    border-radius: 0;
+    padding: 8px 10px;
+    background-color: #1b5b92;
+    color: #fff;
+    letter-spacing: .08em;
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 10px;
+    -webkit-transition: .2s ease-out .2s;
+    transition: .2s ease-out .2s;
+    -webkit-transition: .2s;
+    transition: .2s
+}
+
+.btn-maroon {
+    background-color: #8f1b2b;
+    border-color: #710a18
+}
+
+.btn-darkgray,
+.btn-maroon {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em
+}
+
+.btn-darkgray {
+    background-color: #3e4144;
+    border-color: #27292c
+}
+
+.uniIntro .col-md-8 p {
+    font-size: 23px;
+    line-height: 1.7em
+}
+
+@media only screen and (max-width:768px) {
+    .uniIntro .col-md-8 p {
+        font-size: 18px;
+        line-height: 1.5em;
+        margin-top: 30px
+    }
+}
+
+.uniIntro .col-lg-12 {
+    margin-top: 37px
+}
+
+.uniIntro {
+    margin-bottom: 47px
+}
+
+.features {
+    margin-bottom: 75px
+}
+
+.flexer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 100%;
+    flex-flow: row wrap
+}
+
+.content-img {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //border: solid 4px rgba(255, 255, 255, 0.95);
+    }
+}
+
+#uniDisclaimer {
+    font-size: 11px;
+    padding: 15px 0
+}
+
+.uniDisclaimerLeftCA {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: -webkit-calc(100% - 81px);
+    width: calc(100% - 81px)
+}
+
+.uniDisclaimerRightCA {
+    float: left;
+    width: 81px
+}
+
+.introduce {
+    margin-top: 50px
+}
+
+object {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    padding-top: 100%
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.broThumb {
+    font-size: .88em;
+    max-width: 265px
+}
+
+.broThumb img {
+    border: solid 1px #eee;
+    -webkit-transition: opacity 250ms ease-out;
+    transition: opacity 250ms ease-out
+}
+
+.broThumb a:hover img {
+    opacity: .8
+}
+
+.broThumb .btn {
+    width: 100%
+}
+
+.feat-itins {
+    margin-top: 25px;
+}
+
+.itinerary-row-2018 {
+    margin-bottom: 50px;
+}
+
+.itinerary-row-2018__copy h2 {
+    margin-top: 0;
+    margin-bottom: 0em;
+    display: inline-block;
+}
+
+@media only screen and (max-width:768px) {
+    .itinerary-row-2018__copy {
+        margin-top: 25px;
+    }
+}
+
+.itinerary-row-2018__copy h3 {
+    display: flex;
+    margin-top: 0.1em;
+    font-size: 1.3em;
+    align-items: center;
+    margin-bottom: 0.9em;
+    letter-spacing: 0.07em;
+}
+
+.circ-divider {
+    width: 5px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+    margin: 0.2em 0.5em 0;
+}
+
+.itin-to {
+    font-family: "questa_grandebold_italic", serif;
+    text-transform: none;
+    margin: 0.2em 0.5em 0;
+    font-size: 0.8em;
+    letter-spacing: initial;
+}
+
+.itinerary-row-2018__button .btn {
+    max-width: 200px;
+    width: 46%;
+}
+
+@media only screen and (max-width:768px) {
+    .itinerary-row-2018__button .btn {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.gen-list {
+    h3:last-child {
+        margin: 56px 0;
+    }
+    .gen-list_list {
+        column-count: 1;
+        list-style-type: disc;
+        li {
+            margin: 4px 0 4px 1em;
+        }
+        @include bp-48EM {
+            column-count: 2;
+        }
+    }
+}
+
+
 /*! --------------------------------------------------------
                 CUSTOM CLASSES
 ----------------------------------------------------------*/
 
+
+#uniDisclaimer {
+    font-size: 85%;
+    padding: 0 15px;
+}
+
+
+
+.uniDisclaimerRightCA {
+    width: 81px;
+    float: left;
+}
+
+
+
+.uniDisclaimerLeftCA {
+    width: calc(100% - 81px);
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 // centered columns styles
 .row-centered {
     text-align: center;
-
     div[class*='col-'] {
         display: inline-block;
         float: none;
@@ -53,34 +422,34 @@
     }
 }
 
-
 // NO GUTTER
 .no-gutter > [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
 }
 
-
 // MAKE COLUMNS EQUAL HEIGHTS IN EACH ROW
-  
-.row-flex, .row-flex > div[class*='col-'] {  
+.row-flex,
+.row-flex > div[class*='col-'] {
     display: flex;
-    flex:1 1 auto;
+    flex: 1 1 auto;
 }
 
 .row-flex-wrap {
     align-content: flex-start;
-    flex:0;
+    flex: 0;
 }
 
-.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
-     margin:-.2px; /* hack adjust for wrapping */
+.row-flex > div[class*='col-'],
+.container-flex > div[class*='col-'] {
+    margin: -.2px;
+    /* hack adjust for wrapping */
 }
 
-.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
-    width:100%;
+.container-flex > div[class*='col-'] div,
+.row-flex > div[class*='col-'] div {
+    width: 100%;
 }
-
 
 .flex-col {
     display: flex;
@@ -93,108 +462,117 @@
     flex: 2;
 }
 
+
 /* TEXT RESPONSIVE ALIGN */
-.text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
+
+.text-left-not-xs,
+.text-left-not-sm,
+.text-left-not-md,
+.text-left-not-lg {
     text-align: left;
 }
 
-.text-center-not-xs, .text-center-not-sm, .text-center-not-md, .text-center-not-lg {
+.text-center-not-xs,
+.text-center-not-sm,
+.text-center-not-md,
+.text-center-not-lg {
     text-align: center;
 }
 
-.text-right-not-xs, .text-right-not-sm, .text-right-not-md, .text-right-not-lg {
+.text-right-not-xs,
+.text-right-not-sm,
+.text-right-not-md,
+.text-right-not-lg {
     text-align: right;
 }
 
-.text-justify-not-xs, .text-justify-not-sm, .text-justify-not-md, .text-justify-not-lg {
+.text-justify-not-xs,
+.text-justify-not-sm,
+.text-justify-not-md,
+.text-justify-not-lg {
     text-align: justify;
 }
 
 @media (max-width: 767px) {
-    .text-left-not-xs, .text-center-not-xs, .text-right-not-xs, .text-justify-not-xs {
+    .text-left-not-xs,
+    .text-center-not-xs,
+    .text-right-not-xs,
+    .text-justify-not-xs {
         text-align: inherit;
     }
-
     .text-left-xs {
         text-align: left;
     }
-
     .text-center-xs {
         text-align: center;
     }
-
     .text-right-xs {
         text-align: right;
     }
-
     .text-justify-xs {
         text-align: justify;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .text-left-not-sm, .text-center-not-sm, .text-right-not-sm, .text-justify-not-sm {
+    .text-left-not-sm,
+    .text-center-not-sm,
+    .text-right-not-sm,
+    .text-justify-not-sm {
         text-align: inherit;
     }
-
     .text-left-sm {
         text-align: left;
     }
-
     .text-center-sm {
         text-align: center;
     }
-
     .text-right-sm {
         text-align: right;
     }
-
     .text-justify-sm {
         text-align: justify;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .text-left-not-md, .text-center-not-md, .text-right-not-md, .text-justify-not-md {
+    .text-left-not-md,
+    .text-center-not-md,
+    .text-right-not-md,
+    .text-justify-not-md {
         text-align: inherit;
     }
-
     .text-left-md {
         text-align: left;
     }
-
     .text-center-md {
         text-align: center;
     }
-
     .text-right-md {
         text-align: right;
     }
-
     .text-justify-md {
         text-align: justify;
     }
 }
 
 @media (min-width: 1200px) {
-    .text-left-not-lg, .text-center-not-lg, .text-right-not-lg, .text-justify-not-lg {
+    .text-left-not-lg,
+    .text-center-not-lg,
+    .text-right-not-lg,
+    .text-justify-not-lg {
         text-align: inherit;
     }
-
     .text-left-lg {
         text-align: left;
     }
-
     .text-center-lg {
         text-align: center;
     }
-
     .text-right-lg {
         text-align: right;
     }
-
     .text-justify-lg {
         text-align: justify;
     }
 }
-
